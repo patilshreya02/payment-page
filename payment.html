@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Form</title>
+</head>
+<style>
+    *{
+       box-sizing:border-box;
+    }
+    body{
+        font-family:verdana;
+        margin: 35px 45px
+         }
+
+    h1{   text-align: center;
+          border-radius:6px;
+          height: 50px;
+          padding: 40px;
+        background: linear-gradient(0deg, rgba(2,16,78,1) 39%, rgba(6,12,34,1) 96%, rgba(74,195,227,1) 100%);}
+    h2{ color:rgb(21, 53, 133);
+      }
+
+  .container{ background-color:white;
+              padding: 5px 20px 15px 20px;
+              border: 1px solid blue;
+              border-radius:4px ;
+}
+     input[type="text"],
+            input[type="email"],
+            input[type="number"],
+            input[type="password"],
+            input[type="date"],
+            select,
+            textarea{
+                width: 100%;
+                padding: 12px;
+            }
+
+    input[type="submit"]{
+    color:white;
+    background-color: rgb(2,16,78);
+    padding:17px 40px;
+    border-radius:4px;
+    cursor:pointer;
+    }
+     .field{
+    background-color: white;
+    }
+
+</style>
+
+<body>
+<div class= "container"</div>
+   <form action="">
+       <h1 style="color:white" >PAYMENT FORM</h1>
+       <h2>User Information</h2>
+       <p style="color:red";>Required Fields are followed by *</p>
+       <p style="color:rgb(21, 53, 133)";>Name: * <input type="text" name="name" required placeholder="shreya patil" ></p>
+       <p style="color:rgb(21, 53, 133)";> email * : <input type="text" Email="Email" required placeholder="abc12@gmail.com"> </p>
+       <fieldset class="field">
+           <legend style="color:rgb(21, 53, 133)";>Gender * </legend>
+           <p>
+           Male <input type="radio" name="gender" required >
+           Female <input type="radio" name="gender" required>
+           </p>
+       </fieldset>
+       <p style="color:rgb(21, 53, 133)";>Address:<textarea name="address" id="address" cols="100" rows="5" placeholder="Enter your address"></textarea></p>
+       <p style="color:rgb(21, 53, 133)";>Pincode:<input type="text" Pincode="pincode" placeholder="124533"></p>
+       <hr>
+          <p style="color:rgb(21, 53, 133)";>  Card Type * :
+              <select name="card_type" id="card_type" required>
+                       <option value="">--select a card type--</option>
+                       <option value="Visa">Visa</option>
+                       <option value="Rupay">Rupay</option>
+                       <option value="Mastercard">Mastercard</option>
+              </select>
+          </p>
+       <p style="color:rgb(21, 53, 133)";> Card Number * <input type="number" name=" card_number"  required placeholder="2222-3333-5555-6666"></p>
+       <p style="color:rgb(21, 53, 133)";> Expiration Date:<input type="date" name="date"</p>
+       <p style="color:rgb(21, 53, 133)";>CVV * <input type="password" name="cvv" required placeholder="123"></p>
+       <input type="submit" value="Pay Now">
+   </form>
+</body>
+</html>
